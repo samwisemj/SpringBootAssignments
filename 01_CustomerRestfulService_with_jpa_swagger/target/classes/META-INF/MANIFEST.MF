@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
 Implementation-Title: 01_CustomerRestfulService_with_jpa_swagger
 Implementation-Version: 0.0.1-SNAPSHOT
-Built-By: subhamsa
+Built-By: Samwie
 Implementation-Vendor-Id: com.Customer
-Build-Jdk: 1.8.0_121
+Build-Jdk: 1.8.0_102
 Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
  ot-starter-parent/01_CustomerRestfulService_with_jpa_swagger
 Created-By: Maven Integration for Eclipse

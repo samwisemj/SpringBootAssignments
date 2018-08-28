@@ -1,0 +1,67 @@
+2018-08-28 20:27:47.715  INFO 6056 --- [main] c.C.C.CustomerRestfulServiceApplication  : Starting CustomerRestfulServiceApplication on Samwie-PC with PID 6056 (started by Samwie in B:\backup\Codes, IDES\Assignments Capgemini\SpringBootAssignments\05_CustomerRestfulService-with-logging)
+2018-08-28 20:27:47.730  INFO 6056 --- [main] c.C.C.CustomerRestfulServiceApplication  : No active profile set, falling back to default profiles: default
+2018-08-28 20:27:47.855  INFO 6056 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7a8c8dcf: startup date [Tue Aug 28 20:27:47 IST 2018]; root of context hierarchy
+2018-08-28 20:27:50.772  INFO 6056 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7703d804] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-28 20:27:50.900  INFO 6056 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$f6842536] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-28 20:27:51.820  INFO 6056 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2018-08-28 20:27:51.868  INFO 6056 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2018-08-28 20:27:51.884  INFO 6056 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-08-28 20:27:51.899  INFO 6056 --- [localhost-startStop-1] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_102\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_102/bin/server;C:/Program Files/Java/jre1.8.0_102/bin;C:/Program Files/Java/jre1.8.0_102/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Java\jre1.8.0_102\bin;C:\Program Files\Java\jdk1.8.0_102\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\Samwie\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\Samwie\AppData\Local\Programs\Python\Python36\;C:\Users\Samwie\AppData\Roaming\npm;C:\Users\Samwie\Downloads\sts-bundle\sts-3.9.5.RELEASE;;.]
+2018-08-28 20:27:52.258  INFO 6056 --- [localhost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2018-08-28 20:27:52.258  INFO 6056 --- [localhost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 4419 ms
+2018-08-28 20:27:52.430  INFO 6056 --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
+2018-08-28 20:27:52.445  INFO 6056 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-28 20:27:52.445  INFO 6056 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-28 20:27:52.445  INFO 6056 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-28 20:27:52.445  INFO 6056 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-28 20:27:52.820  INFO 6056 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2018-08-28 20:27:53.038  INFO 6056 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2018-08-28 20:27:53.445  INFO 6056 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-08-28 20:27:53.476  INFO 6056 --- [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-08-28 20:27:53.648  INFO 6056 --- [main] o.h.Version                              : HHH000412: Hibernate Core {5.2.17.Final}
+2018-08-28 20:27:53.648  INFO 6056 --- [main] o.h.c.Environment                        : HHH000206: hibernate.properties not found
+2018-08-28 20:27:53.726  INFO 6056 --- [main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-08-28 20:27:54.084  INFO 6056 --- [main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2018-08-28 20:27:55.146  INFO 6056 --- [main] o.h.t.s.i.SchemaCreatorImpl              : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@751ae8a4'
+2018-08-28 20:27:55.146  INFO 6056 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-08-28 20:27:56.005  INFO 6056 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-28 20:27:56.863  INFO 6056 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7a8c8dcf: startup date [Tue Aug 28 20:27:47 IST 2018]; root of context hierarchy
+2018-08-28 20:27:56.958  WARN 6056 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-08-28 20:27:57.051  INFO 6056 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/add],methods=[POST]}" onto public void com.Customer.CustomerRestfulService.controller.CustomerController.add(int,java.lang.String,java.lang.String)
+2018-08-28 20:27:57.051  INFO 6056 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/update],methods=[PUT]}" onto public void com.Customer.CustomerRestfulService.controller.CustomerController.update(int,java.lang.String,java.lang.String)
+2018-08-28 20:27:57.051  INFO 6056 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/delete],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.Customer.CustomerRestfulService.controller.CustomerController.delete(int)
+2018-08-28 20:27:57.067  INFO 6056 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/viewAll],methods=[GET]}" onto public java.util.List<com.Customer.CustomerRestfulService.pojo.Customer> com.Customer.CustomerRestfulService.controller.CustomerController.viewAl()
+2018-08-28 20:27:57.067  INFO 6056 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getById/{id}],methods=[GET]}" onto public org.springframework.hateoas.Resource<com.Customer.CustomerRestfulService.pojo.Customer> com.Customer.CustomerRestfulService.controller.CustomerController.getById(int)
+2018-08-28 20:27:57.067  INFO 6056 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-28 20:27:57.067  INFO 6056 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-28 20:27:57.176  INFO 6056 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-28 20:27:57.176  INFO 6056 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-28 20:27:58.034  INFO 6056 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-08-28 20:27:58.050  INFO 6056 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-08-28 20:27:58.065  INFO 6056 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-08-28 20:27:58.222  INFO 6056 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2018-08-28 20:27:58.222  INFO 6056 --- [main] c.C.C.CustomerRestfulServiceApplication  : Started CustomerRestfulServiceApplication in 11.522 seconds (JVM running for 13.579)
+2018-08-28 20:27:58.238  INFO 6056 --- [main] c.C.C.s.CustomerService                  : Inside service add
+2018-08-28 20:27:58.410  INFO 6056 --- [main] c.C.C.s.CustomerService                  : Inside service add
+2018-08-28 20:27:58.410  INFO 6056 --- [main] c.C.C.s.CustomerService                  : Inside service add
+2018-08-28 20:27:58.425  INFO 6056 --- [main] c.C.C.s.CustomerService                  : Inside service add
+2018-08-28 20:27:58.425  INFO 6056 --- [main] c.C.C.s.CustomerService                  : Inside service add
+2018-08-28 20:27:58.425  INFO 6056 --- [main] c.C.C.s.CustomerService                  : Inside service add
+2018-08-28 20:27:58.441  INFO 6056 --- [main] c.C.C.CustomerRestfulServiceApplication  : Info
+2018-08-28 20:27:58.441 FATAL 6056 --- [main] c.C.C.CustomerRestfulServiceApplication  : Fatal
+2018-08-28 20:28:33.292  INFO 6056 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-28 20:28:33.292  INFO 6056 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
+2018-08-28 20:28:33.340  INFO 6056 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 48 ms
+2018-08-28 20:28:33.402  INFO 6056 --- [http-nio-8080-exec-1] c.C.C.c.CustomerController               : In viewAll Customer
+2018-08-28 20:28:33.402  INFO 6056 --- [http-nio-8080-exec-1] c.C.C.s.CustomerService                  : Inside service viewall
+2018-08-28 20:28:33.480  INFO 6056 --- [http-nio-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-08-28 20:52:09.282  INFO 6056 --- [RMI TCP Connection(32)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-08-28 20:52:09.282  INFO 6056 --- [RMI TCP Connection(32)-127.0.0.1] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7a8c8dcf: startup date [Tue Aug 28 20:27:47 IST 2018]; root of context hierarchy
+2018-08-28 20:52:09.282  INFO 6056 --- [RMI TCP Connection(32)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-08-28 20:52:09.282  INFO 6056 --- [RMI TCP Connection(32)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-08-28 20:52:09.282  INFO 6056 --- [RMI TCP Connection(32)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-08-28 20:52:09.282  INFO 6056 --- [RMI TCP Connection(32)-127.0.0.1] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed drop of schema as part of SessionFactory shut-down'
+2018-08-28 20:52:09.298  INFO 6056 --- [RMI TCP Connection(32)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2018-08-28 20:52:09.314  INFO 6056 --- [RMI TCP Connection(32)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
