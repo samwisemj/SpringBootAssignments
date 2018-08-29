@@ -6,7 +6,7 @@ import javax.persistence.*;
 public class Customer {
 
 	@Id
-	private int id;
+	private Integer id;
 	
 	private String name;
 	private String address;
@@ -16,7 +16,7 @@ public class Customer {
 	}
 	public Customer() {
 	}
-	public int getId() {
+	public Integer getId() {
 		return id;
 	}
 	public String getName() {
@@ -25,13 +25,17 @@ public class Customer {
 	public String getAddress() {
 		return address;
 	}
-	public Customer(int id, String name, String address) {
+	public Customer(String name, String address) {
+		this.name = name;
+		this.address = address;
+	}
+	public Customer(Integer id, String name, String address) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.address = address;
 	}
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 	public void setName(String name) {

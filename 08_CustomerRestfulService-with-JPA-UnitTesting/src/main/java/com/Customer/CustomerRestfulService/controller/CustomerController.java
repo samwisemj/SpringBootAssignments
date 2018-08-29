@@ -51,14 +51,22 @@ public class CustomerController {
 	}
 
 	@RequestMapping(value="/getById/{id}",method=RequestMethod.GET/*,produces=MediaType.ALL_VALUE*/)
-	public Resource<Customer> getById(@PathVariable(value="id")int id)
+	public Resource<?> getById(@PathVariable(value="id")int id)
 	{
+		int flag = 0;
 		Resource<Customer> resource=null;
 		for(Customer customer:service.viewAll())
 		{
 			if(customer.getId()==id) {
-				resource=new Resource<Customer>(customer);break;
+				flag = 1;
+				resource=new Resource<Customer>(customer);break;	
 			}
+		}
+		if (flag==0)
+		{
+			ResponseEntity<Object> responseEnt=new ResponseEntity<>(HttpStatus.NOT_FOUND);
+			Resource<ResponseEntity> res=new Resource<ResponseEntity>(responseEnt);
+			return res;
 		}
 		ControllerLinkBuilder link=ControllerLinkBuilder.linkTo(ControllerLinkBuilder.methodOn(this.getClass()).viewAl());
 		resource.add(link.withRel("All-Customers"));
