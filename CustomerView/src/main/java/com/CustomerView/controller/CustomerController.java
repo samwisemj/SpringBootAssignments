@@ -77,7 +77,7 @@ public class CustomerController {
 	}
 
 	@RequestMapping(value = "/addNewCustomer", method = RequestMethod.POST)
-	public void addCustomer(@RequestParam String id, String name, String address, Model model) throws IOException {
+	public String addCustomer(@RequestParam String id, String name, String address, Model model) throws IOException {
 		RestTemplate restTemplate = new RestTemplate();
 
 		HttpHeaders headers = new HttpHeaders();
@@ -95,12 +95,12 @@ public class CustomerController {
 
 		System.out.println(response);
 
-		getAllCustomer(model);
+		return "redirect:viewAll";
 
 	}
 
 	@RequestMapping(value = "/updateCustomer", method = RequestMethod.POST)
-	public void updateCustomer(@RequestParam String id, String name, String address, Model model) throws IOException {
+	public String updateCustomer(@RequestParam String id, String name, String address, Model model) throws IOException {
 		RestTemplate restTemplate = new RestTemplate();
 
 		HttpHeaders headers = new HttpHeaders();
@@ -114,26 +114,22 @@ public class CustomerController {
 		HttpEntity<MultiValueMap<String, String>> request = new HttpEntity<MultiValueMap<String, String>>(map, headers);
 
 		ResponseEntity<String> response = restTemplate.exchange("http://localhost:8080/update", HttpMethod.PUT, request,String.class);
-		getAllCustomer(model);
+		return "redirect:viewAll";
 
 	}
 
 	@RequestMapping(value = "/deleteCustomer", method = RequestMethod.POST)
-	public void updateCustomer(@RequestParam String id,Model model) throws IOException {
+	public String updateCustomer(@RequestParam String id,Model model) throws IOException {
 		RestTemplate restTemplate = new RestTemplate();
 
 		HttpHeaders headers = new HttpHeaders();
 		headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
-
-		MultiValueMap<String, String> map = new LinkedMultiValueMap<String, String>();
-		map.add("id", id);
-	
-		HttpEntity<MultiValueMap<String, String>> request = new HttpEntity<MultiValueMap<String, String>>(map, headers);
-
-		ResponseEntity<String> response = restTemplate.exchange("http://localhost:8080/delete", HttpMethod.DELETE, request,String.class);
-		getAllCustomer(model);
+System.out.println(id);
+	 restTemplate.delete("http://localhost:8080/delete?id="+id,String.class);
+		return "redirect:viewAll";
 
 	}
 	
 	
 }
+
